@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+body{
+    margin:0;
+    background-color: black;
+    font-family: sans-serif;
+}
+.conteiner{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 40s infinite forwards linear;
+}
+
+.imagem{
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+}
+
+.imagem span{
+    margin: auto;
+    font-size: 1.2em;
+}
+
+@keyframes rotate360 {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(-360deg);
+    }
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://www.planocritico.com/wp-content/uploads/2013/04/10-10_Coisas_que_Eu_Odeio_em_Voce.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://pordentrodatela.com.br/wp-content/uploads/2021/08/greatpower1.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+    box-sizing: border-box;
+}
+.imagem:nth-child(3){
+    background-image: url(https://recreio.uol.com.br/media/uploads/disney/frozen_2_abraco_capa.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4){
+    background-image: url(https://i0.wp.com/cinegrandiose.com/wp-content/uploads/2016/06/The-Godfather-Part-II-1.png?fit=960%2C540&ssl=1);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5){
+    background-image: url(https://www.jornalspnorte.com.br/wp-content/uploads/2015/12/1112_STAR-WARS-4.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6){
+    background-image: url(https://rollingstone.uol.com.br/media/_versions/batman-cavaleiro-das-trevas-batman-coringa-curiosidades-reproducao_widelg.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7){
+    background-image: url(https://t.ctcdn.com.br/C31Gky01tjGM1YVE4o6Res75Rsk=/1777x1000/smart/i352665.jpeg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8){
+    background-image: url(https://www.planocritico.com/wp-content/uploads/2023/05/asaventurasdepiplanocritico.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9){
+    background-image: url(https://www.planocritico.com/wp-content/uploads/2016/02/plano-cr%C3%ADtico-kung-fu-panda-2008.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+footer{
+    position: absolute;
+    margin-top: 100vh;
+    transform: translate(-50%);
+    margin-left: 50%;
+    color: white;
+}
